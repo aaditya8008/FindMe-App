@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "919084329614",
+    "project_id": "family-safety-eb76c",
+    "storage_bucket": "family-safety-eb76c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919084329614:android:ef7c2181787e6063f1b7df",
+        "android_client_info": {
+          "package_name": "com.example.familysafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919084329614-qng75du14opf6dtr4g2lstugksustoid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.familysafety",
+            "certificate_hash": "ab84d3c821c8a2117e805b7d61610649e4a8e49e"
+          }
+        },
+        {
+          "client_id": "919084329614-pu17dl5lvogm95vh05mrhndcku2kgp3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK6D11_kWOlyCiMrcGI4phJowTiDl63ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919084329614-pu17dl5lvogm95vh05mrhndcku2kgp3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/transparent"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+       android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@color/idwhite"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="16dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="32dp"
+            android:padding="14dp"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/mainImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/mainImage"
+                app:layout_constraintStart_toStartOf="@+id/loactionIcon"
+                app:layout_constraintTop_toTopOf="@+id/mainImage"
+                app:layout_constraintVertical_bias="0.136" />
+
+            <ImageView
+                android:id="@+id/loactionIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toEndOf="@+id/mainImage"
+                app:layout_constraintTop_toBottomOf="@+id/nameText"
+                app:srcCompat="@drawable/baseline_location_pin_24" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="94dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="8dp"
+                android:text="sdfsdfdsdfd"
+                android:textColor="#C8CDCD"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/loactionIcon"
+                app:layout_constraintStart_toEndOf="@+id/loactionIcon"
+                app:layout_constraintTop_toTopOf="@+id/loactionIcon" />
+
+            <ImageView
+                android:id="@+id/batteryIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainImage"
+                app:srcCompat="@drawable/battery" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+
+                android:text="94%"
+                android:textColor="#BBBFBF"
+                app:layout_constraintBottom_toBottomOf="@+id/batteryIcon"
+                app:layout_constraintStart_toEndOf="@+id/batteryIcon"
+                app:layout_constraintTop_toTopOf="@+id/batteryIcon"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/locationMark"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="36dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:srcCompat="@drawable/navigation" />
+
+            <TextView
+                android:id="@+id/distanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2223M"
+                android:textColor="@color/textGrey"
+                app:layout_constraintBottom_toBottomOf="@+id/locationMark"
+                app:layout_constraintStart_toEndOf="@+id/locationMark"
+                app:layout_constraintTop_toTopOf="@+id/locationMark" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="52dp"
+                android:textColor="#C8CDCD"
+                app:layout_constraintBottom_toBottomOf="@+id/distanceText"
+                app:layout_constraintStart_toEndOf="@+id/distanceText"
+                app:layout_constraintTop_toTopOf="@+id/distanceText"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/wifi" />
+
+            <TextView
+                android:id="@+id/wifiIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wi-Fi"
+                android:textColor="#C8CDCD"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <ImageView
+                android:id="@+id/phoneCall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/wifiIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/wifiIcon"
+                app:layout_constraintVertical_bias="0.545"
+                app:srcCompat="@drawable/telephone" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

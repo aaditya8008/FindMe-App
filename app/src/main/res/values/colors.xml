@@ -6,4 +6,6 @@
     <color name="nwhite">#EFF5F5</color>
     <color name="maingreen">#63D1C7</color>
     <color name="exwhite">#E9EFEE</color>
+    <color name="idwhite">#EFEFEF</color>
+    <color name="textGrey">#C8CDCD</color>
 </resources>
