@@ -124,5 +124,55 @@
         app:layout_constraintTop_toTopOf="@+id/guardmessage"
         app:srcCompat="@drawable/shield" />
 
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/invite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greenCard" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:text="invite"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_login_button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greenCard" />
+
+    <TextView
+        android:id="@+id/invites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Your invites:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/emailId"
+        app:layout_constraintTop_toBottomOf="@+id/emailId" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inviteRecycler"
+        android:layout_width="409dp"
+        android:layout_height="204dp"
+tools:listitem="@layout/invitation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invites" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

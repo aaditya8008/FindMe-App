@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-05-04T12:46:31.247763400Z">
+        <DropdownSelection timestamp="2024-05-14T10:36:29.044482200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\aadit\.android\avd\Medium_Phone_API_VanillaIceCream.avd" />
